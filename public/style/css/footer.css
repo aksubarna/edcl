@@ -1,0 +1,168 @@
+
+.main_footer {
+    padding-top: 5%;
+    background: var( --first-skin-color);
+    display: grid;
+    grid-template-columns: 1fr minmax(300px, 1700px) 1fr;
+    width: 100%;
+}
+
+.main_footer .cover_img{
+    size: cover;
+    position: absolute;
+    right: 20%;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    height: 400px;
+    width: 750px;
+    z-index: 0;
+    background-repeat: no-repeat;
+}
+.main_footer .footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 30rem));
+    gap: 2rem;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+
+  .main_footer .footer .footer_part {
+      margin: auto;
+      height: 450px;
+      width: 100%;
+      position: relative;
+      margin-top: 5px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: 200ms ease-in;
+      border: none;
+      transition: transform 1.0s;
+    }
+
+    .main_footer .footer .footer_part .footer_desc{
+        height: 100%;
+        padding-top:20%;
+        padding-bottom:2%;
+        padding-left:15%;
+        padding-right:15%;
+        color: var(--light-text-color);
+    }
+ 
+    .main_footer .footer .left_footer h3{
+        position: absolute;
+        left: 28%;
+        margin-top: 28%;
+        color: var(--light-text-color);
+    }
+    .main_footer .footer .left_footer .logo_img{
+        position: absolute;
+        left: 27%;
+        margin-top: 10%;
+        height: 80px;
+        width: 80px;
+    }
+    .main_footer .footer .middle_footer .footer_desc{
+        margin-left: 20%;
+    }
+    .main_footer .footer .footer_part a{
+        text-decoration: none;
+        color: var(--dim-text-color);
+    }
+    .main_footer .footer .left_footer p{
+        width: 100%;
+        margin-top: 70px;
+        margin-left: 60px;
+    }
+    .main_footer .footer .right_footer .footer_desc p,
+    .main_footer .footer .footer_part .footer_desc ul{
+        margin-top: 30px;
+    }
+    .main_footer .footer .middle_footer{
+        position: relative;
+    }
+    .main_footer .footer .middle_footer .payment{
+        position: absolute;
+    }
+    .main_footer .footer .middle_footer .payment h3{
+        margin-bottom: 10px;
+    }
+    .main_footer .footer .middle_footer .payment img{
+        height: 50px;
+        width: 50px;
+        margin-right: 10px;
+    }
+
+    @media (max-width:1472px){
+        .main_footer .footer .right_footer .footer_desc{
+            margin-left: 63px;
+            width: 100%;
+        }
+    }
+   
+    
+    .main_footer .footer .footer_part .footer_desc ul,
+    .main_footer .footer .footer_part .footer_desc p{
+        color: var(--dim-text-color);
+    }
+    .main_footer .footer .middle_footer ul li:hover{
+        color: var(--light-text-color);
+    }
+    .main_footer .footer .right_footer .footer_desc a p:hover{
+        color: var(--light-text-color);
+    }
+    .main_footer .footer .footer_part .footer_desc ul li{
+        margin-bottom: 10px;
+        list-style: none;
+    }
+    .main_footer .footer .right_footer .footer_desc p{
+        width: 50%;
+    }
+    .main_footer .footer .left_footer .footer-social{
+        display: flex;
+    }
+    
+    .main_footer .footer .left_footer .footer-social{
+        margin-left: 45px;
+    }
+    .main_footer .footer .left_footer .footer-social li{
+        margin-left: 5%;
+        border-radius: 50px;
+        width: 40px;
+        height: 40px;
+        background-color: rgba(240, 248, 255, 0.205);
+    }
+    .main_footer .footer .left_footer .footer-social li i{
+        color: var(--dim-text-color);
+        font-size: 23px;
+        margin-left: 10px;
+        margin-top: 8px;
+    }
+    .main_footer .footer .left_footer .footer-social li:hover{
+        background-color: var(--text-heighligh-color);
+    }
+    .main_footer .footer .left_footer .footer-social li:hover i{
+        color:var(--light-text-color);
+    }
+
+
+
+
+
+
+
+    .copy_right{
+        position: relative;
+        background-color: rgb(0, 0, 0);
+        width: 100%;
+        display: flex;
+    }
+    .copy_right p{
+        padding: 20px;
+        color: var(--dim-text-color);
+        text-align: center;
+    }
+    .copy_right .copy_side_div{
+        width: 50%;
+    }
